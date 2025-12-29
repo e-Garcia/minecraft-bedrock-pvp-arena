@@ -1,0 +1,20 @@
+# Editors
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# Node / tools (future-proof)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+*.mcaddon
+*.mcworld
+*.zip
+build/
+dist/
+
