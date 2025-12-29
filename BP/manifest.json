@@ -1,0 +1,23 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Minecraft Bedrock PvP Arena (BP)",
+    "description": "Behavior pack scaffold (init/tick).",
+    "uuid": "4989a581-55ff-488f-82ff-a394f2a8bed6",
+    "version": [0, 1, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "55fd0071-0efa-44a0-b9d7-2a2bba5dcafb",
+      "version": [0, 1, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "e85039d7-f1e2-49a1-a585-6c2c01849259",
+      "version": [0, 1, 0]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Minecraft Bedrock PvP Arena (RP)",
+    "description": "Resource pack scaffold (texts only).",
+    "uuid": "e85039d7-f1e2-49a1-a585-6c2c01849259",
+    "version": [0, 1, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "145906ab-7b6d-4ed2-a0e3-7e72a1b3ebc1",
+      "version": [0, 1, 0]
+    }
+  ]
+}

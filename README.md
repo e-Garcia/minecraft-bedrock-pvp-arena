@@ -40,3 +40,25 @@ Designed for:
     - Activate the **Resource Pack**
     - Enable **Require players to accept resource packs**
 4. Join the world and start PvP
+
+
+## Add-on Structure
+
+This repository now includes a minimal Behavior Pack (BP) and Resource Pack (RP) scaffold suitable for Bedrock development.
+
+- `BP/` — Behavior Pack with:
+  - `manifest.json` (pack header + data module + RP dependency)
+  - `functions/init.mcfunction` (scoreboard init)
+  - `functions/tick.mcfunction` (tick entrypoint; runs init once, stub for future logic)
+  - `functions/tick.json` (Bedrock tick runner)
+
+- `RP/` — Resource Pack with:
+  - `manifest.json` (pack header + resources module)
+  - `texts/en_US.lang` (pack name/description)
+
+> Bedrock auto-runs the `tick` function via `BP/functions/tick.json` (not Java-style function tags).
+
+> The UUIDs in `BP/manifest.json` and `RP/manifest.json` are stable identifiers.
+> Do **not** change them after publishing, or worlds may break and updates may not apply cleanly.
+
+The Behavior Pack depends on the Resource Pack via `dependencies` in `BP/manifest.json`.
